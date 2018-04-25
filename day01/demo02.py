@@ -66,9 +66,35 @@ class QSBK(object):
                     # 获取完之后页码索引加一，表示下次读取下一页
                     self.pageIndex += 1
 
+    # 调用该方法，每次敲回车打印输出一个段子
+    def getOneStory(self, pageStories, page):
+        for story in pageStories:
+            input = raw_input()
+            self.loadPage()
+            if input == "Q":
+                self.enable = False
+                return
 
-
-
+    #开始方法
+    def start(self):
+        print u"正在读取糗事百科,按回车查看新段子，Q退出"
+        #使变量为True，程序可以正常运行
+        self.enable = True
+        #先加载一页内容
+        self.loadPage()
+        #局部变量，控制当前读到了第几页
+        nowPage = 0
+        while self.enable:
+            if len(self.stories)>0:
+                #从全局list中获取一页的段子
+                pageStories = self.stories[0]
+                #当前读到的页数加一
+                nowPage += 1
+                #将全局list中第一个元素删除，因为已经取出
+                del self.stories[0]
+                #输出该页的段子
+                self.getOneStory(pageStories,nowPage)
 
 if __name__ == "__main__":
-    pass
+    spider = QSBK()
+    spider.start()
