@@ -17,13 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo02.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day01/demo02.py">
+      <file leaf-file-name="demo04.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day01/demo04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="85">
+              <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
               <folding>
-                <element signature="e#34#47#0" expanded="true" />
+                <element signature="e#14#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,8 +32,8 @@
       <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day01/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="151">
+              <caret line="14" column="45" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
               </folding>
@@ -52,8 +52,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;div class=&quot;content</find>
+      <find />
       <find>content</find>
+      <find>img</find>
+      <find />
+      <find>imgurl</find>
+      <find>imgu</find>
+      <find>&lt;img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -64,15 +69,17 @@
       <list>
         <option value="$PROJECT_DIR$/readme.xtx" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/day01/demo.py" />
         <option value="$PROJECT_DIR$/day01/demo02.py" />
+        <option value="$PROJECT_DIR$/day01/demo.py" />
+        <option value="$PROJECT_DIR$/day01/demo04.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="322" />
+    <option name="x" value="400" />
+    <option name="y" value="58" />
     <option name="width" value="1946" />
-    <option name="height" value="1016" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -80,13 +87,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GiveMeData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GiveMeData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GiveMeData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GiveMeData" type="462c0819:PsiDirectoryNode" />
+              <item name="day01" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -100,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.demo04">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GiveMeData" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,6 +136,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="demo04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GiveMeData" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/demo04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,8 +222,13 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <list>
+      <item itemvalue="Python.demo" />
+      <item itemvalue="Python.demo04" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.demo04" />
         <item itemvalue="Python.demo" />
       </list>
     </recent_temporary>
@@ -202,16 +247,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="-914" width="1297" height="737" extended-state="0" />
+    <frame x="415" y="16" width="1297" height="695" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09040444" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1411578" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.124504365" side_tool="true" visible="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8814468" weight="0.28173375" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.120539255" side_tool="true" visible="true" weight="0.4767025" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.87946075" visible="true" weight="0.4767025" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8754956" visible="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8739096" weight="0.36263737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -241,6 +287,26 @@
     <entry file="file://$PROJECT_DIR$/day01/demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/demo02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#34#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
           <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
@@ -256,22 +322,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day01/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day01/demo02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#34#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/demo04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+          <folding>
+            <element signature="e#14#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
