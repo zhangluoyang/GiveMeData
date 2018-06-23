@@ -6,7 +6,9 @@ import os
 
 
 class BaiduImage():
-
+    """
+     百度网络爬虫
+    """
     def __init__(self, keyword, count=2000, save_path="img", rn=60):
         self.keyword = keyword
         self.count = count
@@ -20,26 +22,30 @@ class BaiduImage():
         self.__acJsonCount = self.__get_ac_json_count()
 
         self.user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"
+
         self.headers = {'User-Agent': self.user_agent, "Upgrade-Insecure-Requests": 1,
                         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
                         "Accept-Encoding": "gzip, deflate, sdch",
                         "Accept-Language": "zh-CN,zh;q=0.8,en;q=0.6",
                         "Cache-Control": "no-cache"}
-        # "Host": Host,
 
     def search(self):
         for i in range(0, self.__acJsonCount):
+            # 获得url数据
             url = self.__get_search_url(i * self.rn)
+            # 根据url获得响应数据
             response = self.__get_response(url).replace("\\", "")
+            # 获得所有的图片列表数据
             image_url_list = self.__pick_image_urls(response)
+            # 存储图片数据到本地
             self.__save(image_url_list)
 
     def __save(self, image_url_list, save_path=None):
         if save_path:
             self.save_path = save_path
 
-        print "已经存储 " + str(self.__totleCount) + "张"
-        print "正在存储 " + str(len(image_url_list)) + "张，存储路径：" + self.save_path
+        print ("已经存储 " + str(self.__totleCount) + "张")
+        print ("正在存储 " + str(len(image_url_list)) + "张，存储路径：" + self.save_path)
 
         if not os.path.exists(self.save_path):
             os.makedirs(self.save_path)
@@ -92,6 +98,11 @@ class BaiduImage():
             c += 1
         return c
 
+
 if __name__ == "__main__":
-    search = BaiduImage("刘亦菲性感", save_path="D:/picture")
+    import os
+    path = "D:\picture\\dog"
+    if not os.path.exists(path):
+        os.mkdir(path)
+    search = BaiduImage("狗", save_path=path)
     search.search()
